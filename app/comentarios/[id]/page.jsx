@@ -94,26 +94,10 @@ export default function Avaliar() {
         <div className="col">
           <div className="card">
             <form className="card-body" onSubmit={handleSubmit(enviaComentario)}>
-              <h3 className="card-title">Cadastre o seu comentário sobre este Veículo</h3>
-              <hr />
-              <div class="my-4">
-                <label for="comentario" class="form-label fs-5">Seu Comentário:</label>
-                <textarea class="form-control form-control-lg" id="comentario" rows="3"
-                  {...register("comentario")}></textarea>
-              </div>
-              <div class="mb-3">
-                <label for="estrelas" class="form-label fs-5">Sua Avaliação (Estrelas)</label>
-                <select class="form-select form-select-lg mb-3" {...register("estrelas")}>
-                  <option value="1">1 Estrela</option>
-                  <option value="2">2 Estrelas</option>
-                  <option value="3">3 Estrelas</option>
-                  <option value="4">4 Estrelas</option>
-                  <option value="5">5 Estrelas</option>
-                </select>
-              </div>
-              <div class="d-grid gap-2 col-6 ms-auto">
-                <input type="submit" className="btn btn-primary btn-lg mt-3" value="Enviar" />
-              </div>
+              <h3 className="card-title">Comentarios do Veículo</h3>
+            
+              
+        
             </form>
           </div>
         </div>

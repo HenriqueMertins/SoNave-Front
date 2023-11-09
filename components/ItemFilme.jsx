@@ -24,7 +24,9 @@ export default function ItemFilme(props) {
           <div>
             <Estrelas soma={props.filme.soma} num={props.filme.num} />
             <div className="float-end">
+            <Link href={"/comentarios/"+props.filme.id}>
               <i class="bi bi-chat-dots text-primary fs-3 me-2" style={{ cursor: 'pointer' }}></i>
+              </Link>
               <Link href={"/avaliar/"+props.filme.id}>
                 <i class="bi bi-patch-plus text-danger fs-3 me-2" style={{ cursor: 'pointer' }}></i>
               </Link>
